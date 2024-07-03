@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import fakeLogo from './fakeLogo.svg'
 // import { add, multiply } from './helpers.js'
 // import cats, { meow } from './cats.js'
 import ShoppingCart from './ShoppingCart.js';
@@ -11,8 +12,10 @@ function App() {
   // console.log(add(16, 8))
   // console.log(cats)
   // console.log(meow())
+  console.log(fakeLogo)
   return (
     <div>
+      <img src={fakeLogo} id="logo" />
       <ShoppingCart items={items} username="Carly"/>
       <ShoppingCart items={moreItems} username="Thomas"/>
     </div>
@@ -21,3 +24,5 @@ function App() {
 }
 
 export default App;
+
+//Note the relationships between ShoppingCart, CartItem, and items/moreitems
