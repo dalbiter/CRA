@@ -12,7 +12,7 @@ const ShoppingCart = ({ items, username }) => {
       { <h1 className="ShoppingCart-header">{username}'s Shopping Cart</h1> /* Note that we use 'className' instead of 'class' as class is a reserved term in js */}
       <div>
         {items.map(i => (
-            <CartItem item={i.name} img={i.img} price={i.price} quantity={i.quantity} /> //note 'item = {i.name}' you can call the prop anything as long as it matches on the component
+            <CartItem key={i.id} item={i.name} img={i.img} price={i.price} quantity={i.quantity} /> //note 'item = {i.name}' you can call the prop anything as long as it matches on the component
         ))}
       </div>
       <b className="ShoppingCart-total">Cart Total: ${rounded}</b>

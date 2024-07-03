@@ -6,6 +6,7 @@ import ShoppingCart from './ShoppingCart';
 import Alert from './Alert'
 import items from './items'
 import moreItems from './moreItems'
+import Greeting from './Greeting'
 import './App.css';
 
 function App() {
@@ -16,13 +17,14 @@ function App() {
   console.log(fakeLogo)
   return (
     <div>
+      <Greeting />
       <Alert variant="success" >
         <h1>Welcome Back!</h1>
       </Alert>
       <Alert variant="danger" >
         <h1>Oh No!</h1>
       </Alert>
-      <img src={fakeLogo} id="logo" />
+      <img src={fakeLogo} alt="logo" id="logo" />
       <ShoppingCart items={items} username="Carly"/>
       <ShoppingCart items={moreItems} username="Thomas"/>
     </div>
