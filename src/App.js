@@ -7,6 +7,8 @@ import Alert from './Alert'
 import items from './items'
 import moreItems from './moreItems'
 import Greeting from './Greeting'
+import Clicker from './Clicker'
+import ButtonGroup from './ButtonGroup';
 import './App.css';
 
 function App() {
@@ -17,6 +19,7 @@ function App() {
   console.log(fakeLogo)
   return (
     <div>
+      <ButtonGroup />
       <Greeting />
       <Alert variant="success" >
         <h1>Welcome Back!</h1>
@@ -27,6 +30,9 @@ function App() {
       <img src={fakeLogo} alt="logo" id="logo" />
       <ShoppingCart items={items} username="Carly"/>
       <ShoppingCart items={moreItems} username="Thomas"/>
+      <Clicker />
+      <Clicker />
+      <Clicker />
     </div>
     
   );
