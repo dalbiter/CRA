@@ -9,6 +9,7 @@ import moreItems from './moreItems'
 import Greeting from './Greeting'
 import Clicker from './Clicker'
 import ButtonGroup from './ButtonGroup';
+import Counter from './Counter';
 import './App.css';
 
 function App() {
@@ -19,7 +20,8 @@ function App() {
   console.log(fakeLogo)
   return (
     <div>
-      <ButtonGroup />
+      <Counter />
+      {/* <ButtonGroup />
       <Greeting />
       <Alert variant="success" >
         <h1>Welcome Back!</h1>
@@ -32,7 +34,7 @@ function App() {
       <ShoppingCart items={moreItems} username="Thomas"/>
       <Clicker />
       <Clicker />
-      <Clicker />
+      <Clicker /> */}
     </div>
     
   );
