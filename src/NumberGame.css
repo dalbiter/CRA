@@ -1,0 +1,19 @@
+.NumberGame {
+    font-size: 2rem;
+    border: 2px solid gray;
+    width: 500px;
+    padding-bottom: 20px;
+}
+
+.winner {
+    color: rgb(6, 166, 41)
+}
+
+.loser {
+    color: orangered;    
+}
+
+button {
+    box-shadow: 2px 2px black;
+    border-radius: 5px;
+}

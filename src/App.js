@@ -10,6 +10,7 @@ import Greeting from './Greeting'
 import Clicker from './Clicker'
 import ButtonGroup from './ButtonGroup';
 import Counter from './Counter';
+import NumberGame from './NumberGame';
 import './App.css';
 
 function App() {
@@ -20,8 +21,9 @@ function App() {
   console.log(fakeLogo)
   return (
     <div>
-      <Counter />
-      {/* <ButtonGroup />
+      <NumberGame />
+      {/* <Counter />
+      <ButtonGroup />
       <Greeting />
       <Alert variant="success" >
         <h1>Welcome Back!</h1>
